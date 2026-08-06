@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+This Post Title
+{% endblock %}
+
+{% block css_files %}
+    <!-- <link rel="stylesheet" href="{% static "blog/post.css" %}">
+    <link rel="stylesheet" href='{% static 'blog/all-posts.css' %}'/> -->
+    <link rel="stylesheet" href='{% static 'blog/post-detail.css' %}'/>
+
+{% endblock %}
+
+
+{% block content %}
+    <section id="summary">
+        <h2>Post Title</h2>
+        <article>
+            <img src="{% static "blog/images/tech_music.png" %}" alt="Post Title">
+            <address>By Brianny</address>
+            <div>
+                Last Updated on <time>July 10th</time>
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <p>
+            Some dummy text. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione eaque alias culpa,
+            praesentium recusandae dignissimos sequi cumque optio. Vero, distinctio consequatur. Doloremque voluptatum consectetur,
+            harum nam illum officia distinctio.
+        </p>
+        <p>
+            Some dummy text. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione eaque alias culpa,
+            praesentium recusandae dignissimos sequi cumque optio. Vero, distinctio consequatur. Doloremque voluptatum consectetur,
+            harum nam illum officia distinctio.
+        </p>
+        <p>
+            Some dummy text. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione eaque alias culpa,
+            praesentium recusandae dignissimos sequi cumque optio. Vero, distinctio consequatur. Doloremque voluptatum consectetur,
+            harum nam illum officia distinctio.
+        </p>
+    </main>
+
+{% endblock %}

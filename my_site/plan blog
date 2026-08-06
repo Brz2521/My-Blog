@@ -1,0 +1,8 @@
+-- URLs & Views -- 
+
+**Blog site plan**
+
+- '/' --> Load starting page which lists latest blog posts and some welcome text
+- '/post' --> Load page which lists all blog posts
+- '/post/my-first-post' --> Load individual blog post page which shows full blog post. Also want to make path links clickable to lead to that path.
+- '/post/<slug>' - adding a dynamic segment
