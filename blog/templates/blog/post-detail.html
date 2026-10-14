@@ -31,8 +31,9 @@
             {% endfor %}
         </div>
         <div id="read-later">
-            <form>
-                {% csfr_token %}
+            <form action="{% url "read-later" %}" method="POST">
+                {% csrf_token %}
+                <input type="hidden" value="{{ post.id }}" name="post_id">
                 <button>Read Later</button>
             </form>
         </div>
